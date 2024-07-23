@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @chinmayrozekar
-- 👀 I’m interested in Linux and Data Science and Machine Learning
+- 👀 I’m interested in Linux , Data Science and Machine Learning
 - 🌱 I’m currently learning Linux and Python
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me www.linkedin.com/in/chinmayrozekar
