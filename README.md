@@ -1,10 +1,18 @@
-- 👋 Hi, I’m @chinmayrozekar
-- 👀 I’m interested in Linux , Data Science and Machine Learning
-- 🌱 I’m currently learning Linux and Python
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me www.linkedin.com/in/chinmayrozekar
+# Chinmay Rozekar
 
-<!---
-chinmayrozekar/chinmayrozekar is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Curious engineer who works in terminals, builds small tools, and keeps exploring better ways to think and create. I enjoy Linux, Python, data science, and automation. My interests move across scripting, system workflows, and machine learning projects that sharpen both logic and creativity.
+
+## Current Focus
+- Learning advanced Linux internals and improving my Python tooling  
+- Building small automation scripts and experimenting with data projects  
+- Strengthening foundations in machine learning and system design  
+
+## Interests
+- Linux and open source tools  
+- Terminal based workflows  
+- Data science and machine learning  
+- Clean, well structured automation  
+
+## Connect
+LinkedIn: https://www.linkedin.com/in/chinmayrozekar  
+GitHub: https://github.com/chinmayrozekar
