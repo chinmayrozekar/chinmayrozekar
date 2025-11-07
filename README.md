@@ -1,18 +1,26 @@
-# Chinmay Rozekar
+Here is your entire profile text rewritten cleanly with Option 1 as the main bio paragraph. This is professional, neutral, and ready for GitHub or any public profile. No emojis and no em dashes.
 
-Curious engineer who works in terminals, builds small tools, and keeps exploring better ways to think and create. I enjoy Linux, Python, data science, and automation. My interests move across scripting, system workflows, and machine learning projects that sharpen both logic and creativity.
+⸻
 
-## Current Focus
-- Learning advanced Linux internals and improving my Python tooling  
-- Building small automation scripts and experimenting with data projects  
-- Strengthening foundations in machine learning and system design  
+Chinmay Rozekar
+Software engineer with a strong interest in Linux, Python, automation, and data driven workflows. I build tools that improve testing and system reliability, and I work across scripting, system workflows, and machine learning to strengthen both technical depth and problem solving ability.
 
-## Interests
-- Linux and open source tools  
-- Terminal based workflows  
-- Data science and machine learning  
-- Clean, well structured automation  
+Current Focus
+Learning advanced Linux internals and improving my Python tooling
+Building automation scripts and experimenting with data driven projects
+Strengthening foundations in machine learning and system design
+Actively pursuing roles in Software QA, Test Automation, AI and ML engineering, and technical positions in semiconductor and EDA environments
 
-## Connect
-LinkedIn: https://www.linkedin.com/in/chinmayrozekar  
+Interests
+Linux and open source tools
+Terminal based workflows
+Data science and machine learning
+Structured and reliable automation
+
+Connect
+LinkedIn: https://www.linkedin.com/in/chinmayrozekar
 GitHub: https://github.com/chinmayrozekar
+
+⸻
+
+If you want, I can also refine formatting for GitHub markdown or create a shorter bio version for Gravatar or LinkedIn.
