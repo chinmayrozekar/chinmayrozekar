@@ -1,6 +1,5 @@
-![Chinmay's GitHub stats](https://github-readme-stats.vercel.app/api?username=chinmayrozekar&show_icons=true&theme=default)
+![GitHub Streak](https://streak-stats.demolab.com/?user=chinmayrozekar&theme=default)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=chinmayrozekar&layout=compact&theme=default)
 
 ## Chinmay Rozekar
 
@@ -26,9 +25,8 @@ EDA CAD Automation roles at semiconductor companies. Open to RF test engineering
 
 ### Connect
 
-- LinkedIn: [chinmayrozekar](https://www.linkedin.com/in/chinmayrozekar)
-- GitHub: [@chinmayrozekar](https://github.com/chinmayrozekar)
+- LinkedIn:   [chinmayrozekar](https://www.linkedin.com/in/chinmayrozekar)
+- GitHub:     [@chinmayrozekar](https://github.com/chinmayrozekar)
+- X:          [@ChinmayRozekar](https://x.com/ChinmayRozekar)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=chinmayrozekar&layout=compact&theme=default)
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=chinmayrozekar&theme=default)
