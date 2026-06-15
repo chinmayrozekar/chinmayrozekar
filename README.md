@@ -17,7 +17,7 @@
 
 I'm **Chinmay Rozekar** — I build AI-driven automation and validation tooling for semiconductor and high-performance computing systems.
 
-5+ years across **AMD** (Ryzen SoC validation, yield improvement from 42% → 85%) and **Siemens EDA** (Calibre PERC, DRC/LVS regression automation). Currently applying LLMs, RAG, and agentic AI to the hardest unsolved problem in chip development: **making post-silicon failure triage fast**.
+6+ years across **AMD** (Ryzen SoC validation, yield improvement from 42% → 85%) and **Siemens EDA** (Calibre PERC, DRC/LVS regression automation). Currently applying LLMs, RAG, and agentic AI to the hardest unsolved problem in chip development: **making post-silicon failure triage fast**.
 
 MS in Electrical Engineering — Rochester Institute of Technology.
 
