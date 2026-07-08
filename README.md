@@ -9,7 +9,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=76B900&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=100&lines=AI+%2F+ML+Engineer;Semiconductor+Validation;LLM+%26+Agentic+Systems)](https://github.com/chinmayrozekar)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=1400&pause=500&color=76B900&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=100&lines=AI+%2F+ML+Engineer;Semiconductor+Validation;LLM+%26+Agentic+Systems)](https://github.com/chinmayrozekar)
 
 <br>
 
