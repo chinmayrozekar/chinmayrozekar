@@ -1,6 +1,9 @@
 <div align="center">
 
-![ROZEKAR - Chinmay](https://github.com/chinmayrozekar/chinmayrozekar/raw/main/rozekar-logo.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/chinmayrozekar/chinmayrozekar/raw/main/rozekar-logo-dark.png">
+  <img alt="ROZEKAR - Chinmay" src="https://github.com/chinmayrozekar/chinmayrozekar/raw/main/rozekar-logo-light.png">
+</picture>
 
 </div>
 
