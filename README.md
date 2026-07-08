@@ -1,6 +1,12 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=76B900&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=80&lines=AI+%7C+ML+%7C+Agentic+Systems+%7C+GPU+Validation;Building+AI+tooling+for+semiconductor+and+systems+debug)](https://git.io/typing-svg)
+![ROZEKAR - Chinmay](https://github.com/chinmayrozekar/chinmayrozekar/raw/main/rozekar-logo.png)
+
+</div>
+
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=76B900&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=80&lines=Building+AI-Driven+Automation+for+Semiconductors+%26+HPC)]
 
 <br>
 
@@ -17,7 +23,7 @@
 
 I'm **Chinmay Rozekar** — I build AI-driven automation and validation tooling for semiconductor and high-performance computing systems.
 
-6+ years across **AMD** (Ryzen SoC validation, yield improvement from 42% → 85%) and **Siemens EDA** (Calibre PERC, DRC/LVS regression automation). Currently applying LLMs, RAG, and agentic AI to the hardest unsolved problem in chip development: **making post-silicon failure triage fast**.
+6+ years across **AMD** (Ryzen SoC validation, yield improvement from 42% → 85%) and **Siemens EDA** (Calibre PERC, DRC/LVS regression automation). Currently applying LLMs, RAG, and agentic AI to large-scale log triage and debugging automation.
 
 MS in Electrical Engineering — Rochester Institute of Technology.
 
@@ -57,7 +63,7 @@ Designed for semiconductor and systems-debug environments. Runs entirely on-prem
 <strong>medical-rag-assistant</strong>
 </td>
 <td>
-RAG-based medical AI assistant using <strong>Mistral-7B</strong>, SentenceTransformers, and ChromaDB over a 4,000+ page medical manual. LLM-as-judge evaluation shows superior performance over baseline models on hallucination rate.<br>
+RAG-based medical AI assistant using <strong>Mistral-7B</strong>, SentenceTransformers, and ChromaDB over a 4,000+ page medical manual. LLM-as-judge evaluation shows superior performance over base models.
 <a href="https://github.com/chinmayrozekar/medical-rag-assistant">→ repo</a>
 </td>
 </tr>
@@ -135,7 +141,7 @@ Gradient Boosting, Decision Trees, and DNNs with SMOTE across 40,000+ records (l
 
 <br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=chinmayrozekar&bg_color=000000&title_color=76b900&color=a8d08a&line=76b900&point=a8d08a&area_color=76b900&hide_border=true&area=true" width="95%" alt="activity"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=chinmayrozekar&bg_color=000000&title_color=76b900&color=a8d08a&line=76b900&point=a8d08a&area_color=76b900&hide_border=true&radius=16" alt="activity"/>
 
 </div>
 
