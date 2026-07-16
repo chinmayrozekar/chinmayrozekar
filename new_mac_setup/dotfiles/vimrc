@@ -1,0 +1,158 @@
+" Enable Syntax
+syntax on
+
+
+" Delete later:
+" Turn off all sounds and visual bells
+set noerrorbells        " Turn off error bells
+set novisualbell        " Turn off visual bell
+set t_vb=               " Disable terminal visual bell
+set belloff=all         " Turn off bells for all events
+
+
+
+
+" Enable relative line numbering
+"set rnu
+set nu
+" Disable  mouse
+set mouse=v
+
+" Set character set as UTF-8
+set encoding=utf-8
+
+" Enable smartcase serach sensitivity
+set ignorecase
+set smartcase
+
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set backspace=indent,eol,start
+set autoindent
+set laststatus=2                " 2 displays status line always
+
+" Enable highlight searching pattern
+set hlsearch
+
+" Enable show matches while typing to search 
+set incsearch
+
+" Shows the matching part of pairs [], {}, and ()
+set showmatch
+colorscheme desert
+
+
+" Chinmay Vim customizations:
+
+inoremap <c-b> <Esc>:Lex<cr>:vertical resize 40<cr>
+nnoremap <c-b> <Esc>:Lex<cr>:vertical resize 40<cr>
+let g:netrw_liststyle = 3        " Tree-style view
+"let g:netrw_banner = 0           " Hide the help banner
+let g:netrw_altv = 1             " Open in a vertical split
+let g:netrw_winsize = 35        " Set width of the explorer
+"let g:markdown_syntax_conceal = 0
+autocmd FileType netrw highlight netrwMarkFile ctermbg=yellow ctermfg=black guibg=yellow guifg=black
+
+command! Wq wq
+command! WQ wq
+command! Qa qa
+command! QA qa
+command! Q q
+command! W w
+
+"----------------------------------------------------------------
+" Vim Plugins:
+
+call plug#begin()
+" Goyo.vim
+Plug 'junegunn/goyo.vim'
+" Limelight.vim
+Plug 'junegunn/limelight.vim'
+" Vim-Wiki:
+Plug 'vimwiki/vimwiki'
+
+" Draw-It
+Plug 'vim-scripts/DrawIt'
+
+" Ansi-Esc
+Plug 'powerman/vim-plugin-AnsiEsc'
+
+" File Explorer
+Plug 'preservim/nerdtree'
+
+" Syntax Highlighting
+"Plug 'sheerun/vim-polyglot'
+
+" Vim code dark
+Plug 'tomasiser/vim-code-dark'
+
+" vim-table-mode
+Plug 'dhruvasagar/vim-table-mode'
+
+" vim-easy-align'
+Plug 'junegunn/vim-easy-align'
+
+call plug#end()
+
+"----------------------------------------------------------------
+" Associate .txt files with python like syntax
+
+autocmd BufNewFile,BufRead *.txt set syntax=python
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+
+
+
+"----------------------------------------------------------------
+" Vim Wiki:
+
+" Prerequisites 
+set nocompatible
+filetype plugin on
+syntax on
+
+"----------------------------------------------------------------
+" Associate .wiki files with python like syntax
+autocmd BufNewFile,BufRead *.wiki set syntax=python
+
+
+" let g:vimwiki_list = [{'path': '/wv/chiroz51/misc/cheatsheets/vimwiki/', 'syntax': 'markdown', 'ext': 'md'}]
+
+" set clipboard=unnamedplus
+
+set cursorline
+highlight CursorLine cterm=NONE ctermbg=237 gui=NONE guibg=#4e4e4e
+
+
+" NERDTREE
+" Map <Leader>n to toggle NERDTree
+nnoremap <silent> <Leader>n :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+
+"----------------------------------------------------------------
+" Vim Easy Align
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+
+
+" Return to last edit position when opening files
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+
+
+

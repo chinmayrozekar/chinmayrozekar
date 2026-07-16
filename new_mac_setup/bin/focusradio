@@ -1,0 +1,121 @@
+#!/usr/bin/env zsh
+# focusradio (zsh) - pick a focus channel and play it in mpv as audio only
+
+set -e
+set -o pipefail
+emulate -L zsh
+
+# Check dependencies
+for cmd in mpv yt-dlp; do
+  command -v "$cmd" >/dev/null 2>&1 || {
+    print -r -- "Missing $cmd. Install with: brew install $cmd"
+    exit 1
+  }
+done
+
+# Channels and queries
+typeset -a NAMES QUERIES
+NAMES=(
+  "LoFi Girl"
+  "Chillhop Music"
+  "College Music"
+  "Ambient Renders"
+  "The Jazz Hop Café"
+  "the bootleg boy"
+  "STEEZYASF"
+  "ThePrimeThanatos Synthwave"
+  "Cafe Music BGM channel"
+  "ChillAF"
+  "Mahamantra – Prabhupada Chanting"
+  "Trap Beats"
+  "Indian Instrumental Raagas"
+  "Metal and Hard Rock"
+  "Epic Heroic Music"
+  "Anime Instrumental"
+  "Binaural Beats"
+  "White Noise"
+)
+
+# For YouTube entries, use search queries to avoid fragile /live URLs.
+# For Mahamantra, use the direct SoundCloud URL.
+
+QUERIES=(
+  "lofi girl live"
+  "chillhop music live"
+  "college music live radio"
+  "ambient renders live"
+  "jazz hop cafe live"
+  "bootleg boy lofi live"
+  "steezyasf live mix"
+  "synthwave radio prime thanatos live"
+  "cafe music bgm live"
+  "chillaf live radio"
+  "https://soundcloud.com/harekrishnadas/prabhupada-chanting-the-mahamantra-with-432-hz-nature-sounds-background"
+  "trap instrumental beats live radio"
+  "indian classical instrumental music live radio"
+  "heavy metal instrumental mix"
+  "epic heroic instrumental music mix live"
+  "anime lofi instrumental piano radio"
+  "binaural beats focus 40hz"
+  "white noise 10 hours"
+)
+
+print_menu() {
+  print -r -- "Pick a channel:"
+  local i=1
+  for name in "${NAMES[@]}"; do
+    print -r -- "$i) $name"
+    ((i++))
+  done
+  print -r -- "s) Shuffle one at random"
+  print -r -- "q) Quit"
+}
+
+choose() {
+  local choice="$1" idx
+  if [[ "$choice" == "q" ]]; then
+    print -r -- "Bye"; exit 0
+  elif [[ "$choice" == "s" ]]; then
+    idx=$(( (RANDOM % ${#NAMES[@]}) + 1 ))
+  elif [[ "$choice" == <-> ]]; then
+    idx="$choice"
+    (( idx >= 1 && idx <= ${#NAMES[@]} )) || { print -r -- "Invalid option"; exit 1; }
+  else
+    print -r -- "Invalid option"; exit 1
+  fi
+  PICK="${NAMES[$idx]}"
+  QUERY="${QUERIES[$idx]}"
+
+  # Build URL: direct for http(s), search for others
+  if [[ "$QUERY" == http* ]]; then
+    URL="$QUERY"
+  else
+    URL="ytdl://ytsearch1:${QUERY}"
+  fi
+
+  # Auto loop for Mahamantra
+  if [[ "$PICK" == "Mahamantra – Prabhupada Chanting" ]]; then
+    LOOP_FLAG="--loop=inf"
+  else
+    LOOP_FLAG=""
+  fi
+}
+
+# Accept optional argument like: focusradio 3  or  focusradio s
+if (( $# > 0 )); then
+  choose "$1"
+else
+  print_menu
+  vared -p "Enter choice: " -c ans
+  choose "$ans"
+fi
+
+print -r -- "Starting: $PICK"
+mpv \
+  --no-video \
+  --cache=yes \
+  --msg-level=all=no \
+  --ytdl-format="bestaudio*/bestaudio" \
+  --ytdl-raw-options=cookies-from-browser=chrome,yes-playlist=,geo-bypass= \
+  $LOOP_FLAG \
+  "$URL"
